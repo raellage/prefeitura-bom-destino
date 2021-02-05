@@ -6,7 +6,7 @@ import { Layout, Container } from 'layouts';
 
 const Servicos = center => (
   <Layout>
-    <Helmet title={'Serviços'} />
+    <Helmet title={'Serviços - Prefeitura de Bom Destino'} />
     <Header title="Serviços">Prefeitura de Bom Destino</Header>
     <Container center={center}>
       <h3>POR ASSUNTO</h3>

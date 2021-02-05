@@ -6,7 +6,7 @@ import { Layout, Container } from 'layouts';
 
 const FaleConosco = center => (
   <Layout>
-    <Helmet title={'Fale conosco'} />
+    <Helmet title={'Fale conosco - Prefeitura de Bom Destino'} />
     <Header title="Fale conosco">Prefeitura de Bom Destino</Header>
     <Container center={center}>
       <form name="contact" method="POST" data-netlify="true">
