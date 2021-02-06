@@ -53,6 +53,7 @@ const Index = ({ data }, center) => {
 export default Index;
 
 Index.propTypes = {
+  center: PropTypes.object,
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.arrayOf(
