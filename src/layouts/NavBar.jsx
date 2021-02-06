@@ -8,6 +8,9 @@ const StyledLink = styled(Link)`
   display: flex;
   font-weight: 700;
   align-items: center;
+  img {
+    margin: 0;
+  }
 `;
 
 const Nav = styled.nav`
@@ -16,7 +19,8 @@ const Nav = styled.nav`
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   font-size: 1.1rem;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 2rem;
   a {
     color: ${props => props.theme.colors.white.base};
     margin-left: 2rem;
@@ -24,6 +28,10 @@ const Nav = styled.nav`
     &:hover {
       color: ${props => props.theme.colors.white.grey};
     }
+  }
+  @media (max-width: ${props => props.theme.breakpoints.s}) {
+    flex-direction: column;
+    padding-top: 1rem;
   }
 `;
 

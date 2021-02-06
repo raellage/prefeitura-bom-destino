@@ -13,10 +13,10 @@ const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
   height: 300px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 300px;
+    height: 400px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 275px;
+    height: 500px;
   }
   position: relative;
   overflow: hidden;
@@ -26,7 +26,7 @@ const Text = styled.div`
   color: ${props => props.theme.colors.white.base};
   z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;

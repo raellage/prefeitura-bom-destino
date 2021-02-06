@@ -10,7 +10,7 @@ module.exports = {
   banner: 'static/logo/banner.png',
   // JSONLD / Manifest
   favicon: 'static/logo/favicon.png', // Used for manifest favicon generation
-  shortName: 'bomdestino', // shortname for manifest. MUST be shorter than 12 characters
+  shortName: 'Bom Destino', // shortname for manifest. MUST be shorter than 12 characters
   author: 'Israel Lage', // Author for schemaORGJSONLD
   themeColor: '#3e7bf2',
   backgroundColor: '#d3e0ff',
