@@ -11,11 +11,9 @@ const ConsultaIPTU = center => {
     // get data from GitHub api
     axios.post(`https://sgm-app.herokuapp.com/api/authenticate`,
       {
-        params: {
-            "username": "user",
-            "password": "user",
-            "rememberMe": false,
-        }
+        "username": "user",
+        "password": "user",
+        "rememberMe": false
       })
       .then(response => {
         console.log(response);
