@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from '@emotion/styled';
 import { Header, PostList } from 'components';
-import { Layout } from 'layouts';
+import { Layout, Container } from 'layouts';
 
 const PostWrapper = styled.div`
   display: flex;
@@ -20,12 +20,16 @@ const PostWrapper = styled.div`
   }
 `;
 
-const Index = ({ data }) => {
+const Index = ({ data }, center) => {
   const { edges } = data.allMarkdownRemark;
   return (
     <Layout>
       <Helmet title={'Home Page - Prefeitura de Bom Destino'} />
       <Header title="Home Page">Prefeitura de Bom Destino</Header>
+      <Container center={center}>
+        <h2>Serviço destaque</h2>
+        <h3><a href="servicos/consulta-iptu-itr">Consulta IPTU/ITR</a></h3>
+      </Container>      
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
