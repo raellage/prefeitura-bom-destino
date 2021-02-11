@@ -21,7 +21,6 @@ const ConsultaIPTU = center => {
         "rememberMe": false
       })
       .then(response => {
-        console.log(response);
         localStorage.setItem('token', response.data.id_token)
       })
       .catch(function (error) {
@@ -40,7 +39,7 @@ const ConsultaIPTU = center => {
       const api = `https://sgm-app.herokuapp.com/api/imovels/${numeroCadastro}`
       axios.get(api, { headers: {"Authorization" : `Bearer ${token}`} })
         .then(res => {
-          console.log(res.data);
+
           setDadosImovel(res.data);
           setDadosDebitos([]);
         })
@@ -58,7 +57,6 @@ const ConsultaIPTU = center => {
     const api = `https://sgm-app.herokuapp.com/api/debitos`
     axios.get(api, { headers: {"Authorization" : `Bearer ${token}`} })
       .then(res => {
-        console.log(res.data);
         let debitosImovel = res.data.filter((debito) => {
           if(debito.imovel != null) {
             return debito.imovel.id == numeroCadastro;
@@ -71,7 +69,6 @@ const ConsultaIPTU = center => {
 
         setDadosDebitos(debitosImovel)
 
-        console.log(debitosImovel);
       })
       .catch(function (error) {
         console.log(error);
