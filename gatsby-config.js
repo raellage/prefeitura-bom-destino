@@ -6,10 +6,12 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-RSZCJC3MEF",
-        head: false,
+        trackingIds: ["G-RSZCJC3MEF"],
+        pluginConfig: {
+          head: false
+        }
       },
     },
     'gatsby-plugin-react-helmet',
