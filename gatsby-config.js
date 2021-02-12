@@ -5,6 +5,7 @@ module.exports = {
     ...config,
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -12,7 +13,6 @@ module.exports = {
         head: true,
       },
     },
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',
