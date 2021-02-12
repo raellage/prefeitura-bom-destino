@@ -5,14 +5,14 @@ module.exports = {
     ...config,
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: "G-RSZCJC3MEF",
         head: true,
       },
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',
